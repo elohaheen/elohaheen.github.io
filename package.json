@@ -42,7 +42,6 @@
     "lost": "^6.6.2",
     "postcss-color-function": "^2.0.0",
     "postcss-focus": "^1.0.0",
-    "postcss-import": "^7.1.0",
     "postcss-media-minmax": "^2.1.0",
     "postcss-mixins": "^2.1.0",
     "postcss-nested": "^1.0.0",
