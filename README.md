@@ -1,5 +1,5 @@
 # template-for-musician [![Build Status](https://api.travis-ci.org/iamvlado/template-for-musician.svg)](https://travis-ci.org/iamvlado/template-for-musician)
-
+PSD => responsive website build with Gulp, Jade, PostCSS, BEM
 ## Technologies
 
 - Frontend
