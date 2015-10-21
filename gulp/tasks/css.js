@@ -3,7 +3,6 @@ var gulp         = require('gulp'),
     postcss      = require('gulp-postcss'),
     plumber      = require('gulp-plumber'),
     minmax       = require('postcss-media-minmax'),
-    imprt        = require('postcss-import'),
     nested       = require('postcss-nested'),
     vars         = require('postcss-simple-vars'),
     color        = require('postcss-color-function'),
@@ -19,10 +18,6 @@ var gulp         = require('gulp'),
 
 gulp.task('css', function() {
   var processors = [
-    imprt({
-      from: process.cwd() + '/app/components/layout/layout.css',
-      glob: true
-    }),
     nested,
     minmax,
     pxtorem,
