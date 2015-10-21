@@ -1,0 +1,65 @@
+.button {
+  display: inline-block;
+  width: 190px;
+  height: 55px;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  border: none;
+  background: none;
+  transition: box-shadow .3s ease-in;
+  &:hover {
+    box-shadow: 3px 3px 9px 0px rgba(50, 50, 50, 0.75);
+    }
+
+  &_background {
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &_1 {
+      background-image: url(../images/button_background_1.png)
+      }
+
+    &_2 {
+      background-image: url(../images/button_background_2.png);
+      }
+
+    &_3 {
+      background-image: url(../images/button_background_3.png);
+      }
+    }
+
+  &_color_white {
+    color: white;
+    }
+
+  &_style {
+
+    &_action {
+      text-transform: none;
+      border: 1px solid #b1b3b4;
+      &:after {
+        content: "\f105";
+        font-weight: normal;
+        font-size: 16px;
+        font-family: "fontawesome";
+        margin-left: 20px;
+        }
+      }
+
+    &_submit {
+      width: auto;
+      height: auto;
+      font-size: 14px;
+      &:hover {
+        color: gray;
+        box-shadow: none;
+        }
+      }
+    }
+  }

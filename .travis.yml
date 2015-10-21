@@ -1,0 +1,15 @@
+sudo: false
+language: node_js
+branches:
+only:
+- master
+before_script:
+- git config --global user.email "vladislavsantsevich@gmail.com"
+- git config --global user.name "Vlado"
+- git remote rm origin
+- git remote add origin https://imvlado:${GH_TOKEN}@github.com/iamvlado/template-for-musician.git
+- npm i
+script:
+- gulp build
+after_script:
+- gulp deploy

@@ -1,0 +1,125 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+  background-color: #3a3a3a;
+
+  &__radio {
+    display: none;
+    }
+
+  &__slides {
+    position: relative;
+    width: 300%;
+    height: 100%;
+    transition: left .5s ease-in-out;
+    }
+
+  &__slide {
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    overflow: hidden;
+    }
+
+  &__controls {
+    position: absolute;
+    bottom: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+
+  &__control {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin-right: 38px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    &:last-child {
+      margin-right: 0;
+      }
+    }
+  }
+
+#radio_1:checked ~ .slider__slides {
+  left: 0%;
+  }
+
+#radio_1:checked ~ .slider__controls label[for='radio_1'] {
+  background-color: transparent;
+  }
+
+#radio_2:checked ~ .slider__slides {
+  left: -100%;
+  }
+
+#radio_2:checked ~ .slider__controls label[for='radio_2'] {
+  background-color: transparent;
+  }
+
+#radio_3:checked ~ .slider__slides {
+  left: -200%;
+  }
+
+#radio_3:checked ~ .slider__controls label[for='radio_3'] {
+  background-color: transparent;
+  }
+
+.slide-content {
+  position: relative;
+  text-align: center;
+
+  &__background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    }
+
+  &__wrapper {
+    position: relative;
+    padding: 160px 0 170px 0;
+    }
+
+  &__logo {
+    display: block;
+    margin: 0 auto 40px auto;
+    }
+
+  &__head {
+    margin: 0 auto 40px auto;
+    font-size: responsive 14px 18px;
+    line-height: 26px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+    }
+
+  &__text {
+    max-width: 520px;
+    margin: 0 auto 60px auto;
+    font-size: responsive 12px 14px;
+    line-height: 24px;
+    letter-spacing: 0.018em;
+    color: #798285;
+    }
+
+  &__caption {
+    font-size: responsive 12px 14px;
+    line-height: 24px;
+    letter-spacing: 0.018em;
+    color: #555e61;
+    }
+  }
+
+
+@media screen and (width <= 1200px) {
+
+  .slide-content__wrapper {
+    padding: 80px 20px 170px 20px;
+    }
+  }

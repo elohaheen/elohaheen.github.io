@@ -1,0 +1,90 @@
+.upcoming-events {
+  lost-utility: clearfix;
+  padding: 225px 0 185px;
+  background: url(../images/upcoming-events-background.jpg) center bottom no-repeat;
+  background-size: cover;
+
+  &__wrapper {
+    float: right;
+    width: 550px;
+    }
+
+  &__head {
+    margin-bottom: 70px;
+    }
+  }
+
+.upcoming-events-item {
+  &__head {
+    font-size: responsive 16px 23px;
+    letter-spacing: 0.2px;
+    margin-bottom: 15px;
+    &:after {
+      content: '';
+      display: block;
+      width: 130px;
+      height: 1px;
+      margin-top: 5px;
+      background-color: #000;
+      }
+    }
+
+  &__text {
+    margin-bottom: 10px;
+    font-size: responsive 12px 14px;
+    line-height: 24px;
+    color: #778285;
+    &:after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 50px;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      margin-left: 35px;
+      background-color: #000;
+      }
+    }
+
+  &__date {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #595959;
+    &_after:after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 165px;
+      margin: 15px 0 5px 35px;
+      background-color: #000;
+      }
+    }
+  }
+
+
+@media screen and (width <= 1200px) {
+
+  .upcoming-events {
+    padding: 100px 0 90px;
+
+    &__wrapper {
+      float: none;
+      margin: 0 auto;
+      }
+    }
+  }
+
+
+@media screen and (width <= 620px) {
+
+  .upcoming-events {
+    padding: 30px 20px 90px;
+
+    &__wrapper {
+      float: none;
+      width: 100%;
+      margin: 0 auto;
+      }
+    }
+  }

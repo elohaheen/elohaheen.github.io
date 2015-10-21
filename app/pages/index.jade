@@ -1,0 +1,22 @@
+extends ../components/layout/layout.jade
+
+block head
+  - pageTitle = 'template-for-musician';
+  - pageDescription = 'PSD to responsive website build with Gulp, Jade, PostCSS, BEM';
+  - pageKeywords = 'Gulp, BEM, Jade, PostCSS';
+  - pageCopyright = 'Vlado - vladocode@gmail.com';
+
+block content
+  include ../components/header/header.jade
+  include ../components/discography/discography.jade
+  include ../components/concert-tours/concert-tours.jade
+  include ../components/latter-compositions/latter-compositions.jade
+  include ../components/slider/slider.jade
+  include ../components/new-compositions/new-compositions.jade
+  include ../components/upcoming-events/upcoming-events.jade
+  include ../components/history/history.jade
+  include ../components/contact/contact.jade
+
+append scripts
+  script(src='js/responsive-nav.js')
+  script(src='js/functions.js')

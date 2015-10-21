@@ -1,0 +1,23 @@
+.title {
+  font-weight: bold;
+  font-size: responsive 12px 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+
+  &__date {
+    margin-bottom: 10px;
+    color: #514b48;
+    border-bottom: 1px solid #000;
+    }
+
+  &__name {
+    margin-top: 7px;
+    margin-bottom: 45px;
+
+    &_color_white {
+      color: #fff;
+      }
+    }
+  }
+
+

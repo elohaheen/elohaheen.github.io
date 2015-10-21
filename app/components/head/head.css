@@ -1,0 +1,52 @@
+.head {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-size: responsive 25px 50px;
+  line-height: 50px;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 0;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+    }
+
+  &__name {
+    position: relative;
+
+    &_background {
+
+      &_discography {
+        color: #a0613f;
+        }
+
+      &_concert-tours {
+        color: #59a9b0;
+        }
+      }
+
+    &_color {
+
+      &_sea-green {
+        color: #35737f;
+        }
+
+      &_dim-gray {
+        color: #5b5c5a;
+        }
+
+      &_dark-slate-gray {
+        color: #454545;
+        text-align: left;
+        }
+      }
+    }
+  }
+

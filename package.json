@@ -1,0 +1,61 @@
+{
+  "name": "template-for-musician",
+  "version": "0.5.0",
+  "description": "PSD to responsive website build with Gulp, Jade, PostCSS, BEM",
+  "main": "gulpfile.js",
+  "keywords": [
+    "frontend",
+    "gulp",
+    "postcss",
+    "template",
+    "jade",
+    "bem"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamvlado/template-for-musician"
+  },
+  "author": "Vlado <vladocode@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp",
+    "deploy": "gulp deploy"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.0.2",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-flatten": "^0.2.0",
+    "gulp-gh-pages": "^0.5.2",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jade": "^1.0.1",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-order": "^1.1.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-postcss": "^6.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-serve": "^1.2.0",
+    "gulp-uglify": "^1.2.0",
+    "imagemin-pngquant": "^4.2.0",
+    "imagemin-svgo": "^4.1.2",
+    "lost": "^6.6.2",
+    "postcss-color-function": "^2.0.0",
+    "postcss-focus": "^1.0.0",
+    "postcss-import": "^7.0.0",
+    "postcss-media-minmax": "^2.1.0",
+    "postcss-mixins": "^1.0.0",
+    "postcss-nested": "^1.0.0",
+    "postcss-pxtorem": "^3.1.0",
+    "postcss-responsive-type": "^0.3.1",
+    "postcss-simple-vars": "^1.0.0",
+    "require-dir": "^0.3.0",
+    "rimraf": "^2.3.4"
+  },
+  "dependencies": {
+    "frontend": "^1.0.3",
+    "jquery": "^2.1.4",
+    "reset.css": "^2.0.2",
+    "responsive-nav": "^1.0.39"
+  }
+}

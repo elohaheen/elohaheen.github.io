@@ -1,0 +1,98 @@
+@lost gutter 0;
+
+.discography {
+  padding: 50px 0 455px;
+  background: url(../images/discography-background.jpg) center bottom no-repeat;
+  &__head {
+    margin: 0 auto 40px;
+    max-width: 500px;
+    }
+
+  &__text {
+    margin: 0 auto 150px;
+    max-width: 720px;
+    }
+
+  &__list-item {
+    margin-bottom: 95px;
+    &:last-child {
+      margin-bottom: 0;
+      }
+    }
+  }
+
+@media screen and (width <= 1200px) {
+  .discography {
+    padding: 15px 0 350px;
+
+    &__head {
+      margin: 0 auto 20px;
+      }
+
+    &__text {
+      margin: 0 auto 75px;
+      padding: 0 20px;
+      }
+
+    &__list-item {
+      margin: 45px auto 45px;
+      padding: 0 25px;
+      max-width: 700px;
+      }
+    }
+  }
+
+.discography__item {
+
+  &-head {
+    float: right;
+    display: block;
+    width: 700px;
+    padding-left: 25px;
+    }
+
+  &-wrapper {
+    lost-utility: clearfix;
+    clear: both;
+    }
+
+  &-title {
+    lost-column: 5/12;
+    margin-top: -25px;
+    }
+
+  &-content {
+    lost-column: 7/12;
+    padding-left: 25px;
+    }
+  }
+
+@media screen and (width <= 1200px) {
+
+  .discography__item {
+
+    &-head {
+      float: none;
+      width: 100%;
+      margin-bottom: 50px;
+      padding: 0;
+      }
+
+    &-wrapper {
+      lost-utility: clearfix;
+      margin-top: 20px;
+      clear: both;
+      }
+
+    &-title {
+      lost-column: 12/12;
+      max-width: 500px;
+      }
+
+    &-content {
+      lost-column: 12/12;
+      max-width: 700px;
+      padding: 0;
+      }
+    }
+  }

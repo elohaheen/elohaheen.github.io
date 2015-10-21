@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  }
+
+*:focus {
+  outline: 0;
+  }
+
+body,
+html {
+  overflow-x: hidden;
+  }
+
