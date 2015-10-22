@@ -35,6 +35,6 @@ gulp.task('css', function() {
   .pipe(order(['reset.css', 'font.css']))
   .pipe(postcss(processors))
   .pipe(concat('common.css'))
-  //.pipe(cssmin())
+  .pipe(cssmin())
   .pipe(gulp.dest(config.paths.dist.styles))
 });
