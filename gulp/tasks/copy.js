@@ -3,5 +3,5 @@ var gulp    = require('gulp'),
     plumber = require('gulp-plumber');
 
 gulp.task('copy', function() {
-  gulp.src(config.paths.app.resources).pipe(gulp.dest(config.paths.dist.resources));
+  gulp.src(config.paths.app.copy).pipe(gulp.dest(config.paths.dist.copy));
 });
