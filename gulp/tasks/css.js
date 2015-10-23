@@ -5,7 +5,9 @@ var gulp         = require('gulp'),
     minmax       = require('postcss-media-minmax'),
     nested       = require('postcss-nested'),
     vars         = require('postcss-simple-vars'),
+    url          = require('gulp-modify-css-urls'),
     color        = require('postcss-color-function'),
+    combiner     = require('stream-combiner2'),
     pxtorem      = require('postcss-pxtorem'),
     lost         = require('lost'),
     autoprefixer = require('autoprefixer'),
@@ -16,7 +18,8 @@ var gulp         = require('gulp'),
     concat       = require('gulp-concat'),
     cssmin       = require('gulp-minify-css');
 
-gulp.task('css', function() {
+gulp.task('css', function () {
+
   var processors = [
     nested,
     minmax,
@@ -30,11 +33,34 @@ gulp.task('css', function() {
       browsers: ['last 2 version', 'IE 8', 'IE 9', 'IE 10', 'IE 11']
     })
   ];
-  gulp.src(config.paths.app.styles)
-  .pipe(plumber())
-  .pipe(order(['reset.css', 'font.css']))
-  .pipe(postcss(processors))
-  .pipe(concat('common.css'))
-  .pipe(cssmin())
-  .pipe(gulp.dest(config.paths.dist.styles))
+
+  var combined = combiner.obj([
+    gulp.src(config.paths.app.styles),
+    postcss(processors),
+
+    url({modify: function(url) {
+      var name = url.split('/').pop(),
+        extension = /\w+/.exec(name.split('?')[0].split('.').pop())[0];
+
+          switch(extension) {
+
+            case 'jpg':
+            case 'png':
+              return '../' + config.paths.dist.images.split('/').pop() + '/' + name;
+            case 'svg':
+            case 'eot':
+            case 'ttf':
+            case 'woff':
+            case 'woff2':
+              return '../' + config.paths.dist.fonts.split('/').pop() + '/' + name;
+
+          }
+    }}),
+
+    concat('common.css'),
+    order(['reset.css', 'font.css']),
+    cssmin(),
+    gulp.dest(config.paths.dist.styles),
+  ]);
+  combined.on('error', console.error.bind(console));
 });
