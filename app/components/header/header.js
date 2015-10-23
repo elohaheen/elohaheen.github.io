@@ -16,8 +16,6 @@ function smoothScroll (duration) {
   });
 }
 
-var a = $(".header__nav").offset().top;
-
 $(document).scroll(function(){
   if($(this).scrollTop() > 1000)
   {
@@ -27,7 +25,15 @@ $(document).scroll(function(){
   }
 });
 
-var nav = responsiveNav(".nav-collapse", {
-  customToggle: "js-nav-toggle",
-  closeOnNavClick: true
-});
+jQuery(function($){
+  $( '.js-nav-toggle' ).click(function(){
+
+    $('.nav-collapse').toggleClass('is-opened')
+    })
+
+  $( '.link' ).click(function(){
+
+    $('.nav-collapse').toggleClass('is-opened')
+    })
+
+  })
