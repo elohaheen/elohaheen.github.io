@@ -21,15 +21,10 @@ module.exports = {
       ],
       styles: [
           npm + 'reset.css/reset.css',
-          npm + 'font-awesome/css/font-awesome.css',
-          app + 'components/**/*.css',
-          app + 'css/*.css'
+          app + 'components/**/*.css'
       ],
       scripts: app + 'components/**/*.js',
-      js: [
-        npm + 'jquery/dist/jquery.min.js',
-        npm + 'responsive-nav/responsive-nav.js'
-      ],
+      js: npm + 'jquery/dist/jquery.min.js',
       images: [
         app + 'components/**/*.{png,jpeg,jpg,svg}',
         '!./app/components/font/**/*.svg'
