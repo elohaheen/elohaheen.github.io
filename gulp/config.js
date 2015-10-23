@@ -11,7 +11,7 @@ module.exports = {
       js: dist + 'js',
       images: dist + 'images',
       fonts: dist + 'fonts',
-      resources: dist
+      copy: dist
     },
     app: {
       html: app + 'pages/*.jade',
@@ -32,7 +32,7 @@ module.exports = {
       fonts: [
         app + 'components/**/*.{eot,ttf,woff,woff2,svg}'
       ],
-      resources: app + 'resources/**/*'
+      copy: app + 'copy/**/*'
     }
   }
 };
