@@ -5,6 +5,6 @@ var gulp    = require('gulp'),
 
 gulp.task('fonts', function() {
   gulp.src(config.paths.app.fonts)
-  .pipe(flatten({ includeParents: -1}))
+  .pipe(flatten({ includeParents: 0}))
   .pipe(gulp.dest(config.paths.dist.fonts));
 });
