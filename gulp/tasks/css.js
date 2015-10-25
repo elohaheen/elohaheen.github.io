@@ -30,12 +30,13 @@ gulp.task('css', function () {
     color,
     lost,
     autoprefixer({
-      browsers: ['last 2 version', 'IE 8', 'IE 9', 'IE 10', 'IE 11']
+      browsers: ['last 2 version', 'IE 8', 'IE 9', 'IE 10', 'IE 11', 'Opera 12']
     })
   ];
 
   var combined = combiner.obj([
     gulp.src(config.paths.app.styles),
+    order(['reset.css', 'font.css']),
     postcss(processors),
 
     url({modify: function(url) {
@@ -58,7 +59,6 @@ gulp.task('css', function () {
     }}),
 
     concat('common.css'),
-    order(['reset.css', 'font.css']),
     cssmin(),
     gulp.dest(config.paths.dist.styles),
   ]);
