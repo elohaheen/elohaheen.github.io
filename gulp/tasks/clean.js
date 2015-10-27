@@ -1,7 +1,7 @@
 var gulp   = require('gulp'),
     config = require('../config'),
-    rimraf = require('rimraf');
+    del    = require('del');
 
-gulp.task('clean', function(cb) {
-  rimraf('././dist/', cb);
+gulp.task('del', function(cb) {
+  del('././dist/', cb);
 });
