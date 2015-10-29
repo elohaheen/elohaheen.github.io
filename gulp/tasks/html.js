@@ -7,4 +7,5 @@ gulp.task('html', function() {
   gulp.src(config.paths.app.html)
     .pipe(plumber())
     .pipe(jade())
+    .pipe(gulp.dest(config.paths.dist.html))
 });
