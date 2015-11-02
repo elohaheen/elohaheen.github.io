@@ -1,9 +1,9 @@
-var config = require('../config'),
-    gulp   = require('gulp');
+var paths = require('../paths'),
+    gulp  = require('gulp');
 
 gulp.task('watch', function() {
-  gulp.watch(config.paths.app.jade, ['html']);
-  gulp.watch(config.paths.app.styles, ['css']);
-  gulp.watch(config.paths.app.scripts, ['scripts']);
-  gulp.watch(config.paths.app.images, ['images']);
+  gulp.watch(['app/pages/*.jade', 'app/components/**/*.jade'], ['html']);
+  gulp.watch('app/components/**/*.css', ['css']);
+  gulp.watch('app/components/**/*.js', ['scripts']);
+  gulp.watch('app/components/**/*.{png,jpeg,jpg,svg}', ['images']);
 });
