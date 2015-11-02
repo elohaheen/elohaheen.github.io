@@ -1,4 +1,4 @@
-var config = require('../config'),
-    gulp   = require('gulp');
+var paths = require('../paths'),
+    gulp  = require('gulp');
 
 gulp.task('default', ['watch', 'serve']);
