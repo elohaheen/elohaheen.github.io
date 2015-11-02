@@ -1,11 +1,11 @@
 var gulp     = require('gulp'),
-    config   = require('../config'),
+    paths   = require('../paths'),
     plumber  = require('gulp-plumber'),
     jade     = require('gulp-jade');
 
 gulp.task('html', function() {
-  gulp.src(config.paths.app.html)
+  gulp.src('app/pages/*.jade')
     .pipe(plumber())
     .pipe(jade())
-    .pipe(gulp.dest(config.paths.dist.html))
+    .pipe(gulp.dest(paths.dist))
 });
