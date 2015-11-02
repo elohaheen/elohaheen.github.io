@@ -5,7 +5,7 @@ var paths   = require('../paths'),
 
 gulp.task('deploy', function () {
   console.log('deploying');
-  return gulp.src(paths.dist)
+  return gulp.src('././dist/**')
   .pipe(plumber())
   .pipe(build().on('error', function(){
     console.log('error', arguments);
