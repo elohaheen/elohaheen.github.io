@@ -1,5 +1,5 @@
-var config = require('../config'),
+var paths = require('../paths'),
     gulp   = require('gulp'),
     serve  = require('gulp-serve');
 
-gulp.task('serve', serve('././dist')); // http://localhost:3000/
+gulp.task('serve', serve(paths.dist)); // http://localhost:3000/
