@@ -1,7 +1,7 @@
 var gulp   = require('gulp'),
-    config = require('../config'),
-    del    = require('del');
+    paths  = require('../paths'),
+    del = require('del');
 
 gulp.task('clean', function(cb) {
-  del('././dist/', cb);
+  del(paths.dist, cb);
 });
