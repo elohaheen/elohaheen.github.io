@@ -1,5 +1,5 @@
 var gulp     = require('gulp'),
-    config   = require('../config'),
+    paths    = require('../paths'),
     plumber  = require('gulp-plumber'),
     gulpif   = require('gulp-if'),
     imagemin = require('gulp-imagemin'),
@@ -8,7 +8,7 @@ var gulp     = require('gulp'),
     flatten  = require('gulp-flatten');
 
 gulp.task('images', function() {
-  gulp.src(config.paths.app.images)
+  gulp.src(['app/components/**/*.{png,jpeg,jpg,svg}', '!./app/components/font/**/*.svg'])
   .pipe(plumber())
   .pipe(gulpif(/[.](png|jpeg|jpg|svg)$/, imagemin({
     optimizationLevel: 1,
@@ -19,5 +19,5 @@ gulp.task('images', function() {
     use: [pngquant()]
   })))
   .pipe(flatten())
-  .pipe(gulp.dest(config.paths.dist.images))
+  .pipe(gulp.dest(paths.images))
 });
