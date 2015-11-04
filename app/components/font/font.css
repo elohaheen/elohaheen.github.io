@@ -2,42 +2,42 @@
   font-family: 'Open Sans';
   font-weight: 400;
   font-style: normal;
-  src: url('../fonts/Open-Sans-regular/Open-Sans-regular.eot');
-  src: url('../fonts/Open-Sans-regular/Open-Sans-regular.eot?#iefix') format('embedded-opentype'),
+  src: url('Open-Sans-regular.eot');
+  src: url('Open-Sans-regular.eot?#iefix') format('embedded-opentype'),
        local('Open Sans'),
        local('Open-Sans-regular'),
-       url('../fonts/Open-Sans-regular/Open-Sans-regular.woff2') format('woff2'),
-       url('../fonts/Open-Sans-regular/Open-Sans-regular.woff') format('woff'),
-       url('../fonts/Open-Sans-regular/Open-Sans-regular.ttf') format('truetype'),
-       url('../fonts/Open-Sans-regular/Open-Sans-regular.svg#OpenSans') format('svg');
+       url('Open-Sans-regular.woff2') format('woff2'),
+       url('Open-Sans-regular.woff') format('woff'),
+       url('Open-Sans-regular.ttf') format('truetype'),
+       url('Open-Sans-regular.svg#OpenSans') format('svg');
 }
 
 @font-face {
   font-family: 'Open Sans';
   font-weight: 700;
   font-style: normal;
-  src: url('../fonts/Open-Sans-700/Open-Sans-700.eot');
-  src: url('../fonts/Open-Sans-700/Open-Sans-700.eot?#iefix') format('embedded-opentype'),
+  src: url('Open-Sans-700.eot');
+  src: url('Open-Sans-700.eot?#iefix') format('embedded-opentype'),
        local('Open Sans Bold'),
        local('Open-Sans-700'),
-       url('../fonts/Open-Sans-700/Open-Sans-700.woff2') format('woff2'),
-       url('../fonts/Open-Sans-700/Open-Sans-700.woff') format('woff'),
-       url('../fonts/Open-Sans-700/Open-Sans-700.ttf') format('truetype'),
-       url('../fonts/Open-Sans-700/Open-Sans-700.svg#OpenSans') format('svg');
+       url('Open-Sans-700.woff2') format('woff2'),
+       url('Open-Sans-700.woff') format('woff'),
+       url('Open-Sans-700.ttf') format('truetype'),
+       url('Open-Sans-700.svg#OpenSans') format('svg');
 }
 
 @font-face {
   font-family: 'Dosis';
   font-weight: 400;
   font-style: normal;
-  src: url('../fonts/Dosis-regular/Dosis-regular.eot');
-  src: url('../fonts/Dosis-regular/Dosis-regular.eot?#iefix') format('embedded-opentype'),
+  src: url('Dosis-regular.eot');
+  src: url('Dosis-regular.eot?#iefix') format('embedded-opentype'),
        local('Dosis Regular'),
        local('Dosis-regular'),
-       url('../fonts/Dosis-regular/Dosis-regular.woff2') format('woff2'),
-       url('../fonts/Dosis-regular/Dosis-regular.woff') format('woff'),
-       url('../fonts/Dosis-regular/Dosis-regular.ttf') format('truetype'),
-       url('../fonts/Dosis-regular/Dosis-regular.svg#Dosis') format('svg');
+       url('Dosis-regular.woff2') format('woff2'),
+       url('Dosis-regular.woff') format('woff'),
+       url('Dosis-regular.ttf') format('truetype'),
+       url('Dosis-regular.svg#Dosis') format('svg');
 }
 
 .font_family_open-sans {
