@@ -11,7 +11,7 @@ PSD => responsive website build with Gulp, Jade, PostCSS, BEM
 - Automatization
   + [Gulp][6]
 
-## Contacts
+## Contact original template creator
 
 * EMail:  [vladocode@gmail.com][1]
 * GitHub: [http://github.com/iamvlado][3]
